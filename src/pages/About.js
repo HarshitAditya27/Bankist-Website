@@ -1,10 +1,39 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
+import { Box, Typography } from "@mui/material";
 
 function About() {
   return (
     <Layout>
-      <h1>About Page</h1>
+      <Box
+        sx={{
+          my: 15,
+          textAlign: "center",
+
+          "& h4": {
+            fontWeight: "bold",
+            my: 2,
+            fontSize: "2rem",
+          },
+          "& p": {
+            textAlign: "justify",
+          },
+          "@media (max-width:600px)": {
+            mt: 0,
+            "& h4": {
+              fontSize: "1.5rem",
+            },
+          },
+        }}
+      >
+        <Typography variant="h4">Welcome to my Restautrant</Typography>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+          veritatis molestiae? Non dicta, a doloremque recusandae eligendi
+          aperiam mollitia, ad autem quisquam optio vero obcaecati voluptatem?
+          Eveniet illo corrupti aspernatur.
+        </p>
+      </Box>
     </Layout>
   );
 }
