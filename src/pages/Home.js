@@ -8,8 +8,11 @@ function Home() {
     <Layout>
       <div className="home" style={{ backgroundImage: `url(${Banner})` }}>
         <div className="header">
-          <h1>Food Website</h1>
-          <p>Best food In India</p>
+          <h2>Taste the best of desi food in Ranchi </h2>
+          <p>
+            Experience the vibrant flavors of Ranchi's best food made by some
+            our best foodies at our FoodZilla!
+          </p>
           <Link to="/menu">
             <button>Order Now</button>
           </Link>

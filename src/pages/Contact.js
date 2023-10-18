@@ -14,16 +14,21 @@ import {
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import PersonIcon from "@mui/icons-material/Person";
 function Contact() {
+  const linkStyle = {
+    color: "black",
+    textDecoration: "none",
+  };
   return (
     <Layout>
       <Box sx={{ my: 10, ml: 10, "& h4": { fontWeight: "bold", mb: 2 } }}>
         <Typography>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque
-            voluptatum neque blanditiis odio nemo a, beatae fugit ipsa commodi
-            dicta dolorum. Quos vitae nobis error quo? Cumque, molestias
-            incidunt?
+            If you encounter any difficulties when placing an order, experience
+            issues with delivery, or have any other inquiries or feedback
+            related to this website, please do not hesitate to contact us using
+            the contact information provided below.
           </p>
         </Typography>
       </Box>
@@ -45,26 +50,35 @@ function Contact() {
                   sx={{ bgcolor: "black", color: "white" }}
                   align="center"
                 >
-                  CD
+                  Contact Details
                 </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               <TableRow>
                 <TableCell>
-                  <SupportAgentIcon sx={{ color: "darkred", pt: 1 }} /> 12345
-                  (toll free)
+                  <SupportAgentIcon sx={{ color: "darkred", pt: 1 }} /> 1800
+                  12345 54321 (toll free)
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>
-                  <EmailIcon sx={{ color: "skyblue", pt: 1 }} /> help@email.com
+                  <EmailIcon sx={{ color: "skyblue", pt: 1 }} />{" "}
+                  <a href="mailto:harshitaditya27@gmail.com" style={linkStyle}>
+                    {" "}
+                    harshitaditya27@gmail.com
+                  </a>
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>
-                  <PhoneAndroidIcon sx={{ color: "green", pt: 1 }} />{" "}
-                  help@email.com
+                  <PhoneAndroidIcon sx={{ color: "green", pt: 1 }} /> +91
+                  786549875
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <PersonIcon sx={{ color: "Orange", pt: 1 }} /> Harshit Aditya
                 </TableCell>
               </TableRow>
             </TableBody>

@@ -3,6 +3,13 @@ import React from "react";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LogoDevIcon from "@mui/icons-material/LogoDev";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+const linkStyle = {
+  color: "white",
+  textDecoration: "none",
+};
+
 function Footer() {
   return (
     <>
@@ -18,16 +25,28 @@ function Footer() {
               mr: 2,
             },
             "& svg:hover": {
-              color: "purple",
+              color: "lightgreen",
               transform: "translateX(5px)",
               transition: "all 400ms",
             },
           }}
         >
           {/*Icons*/}
-          <TwitterIcon />
-          <GitHubIcon />
-          <LogoDevIcon />
+          <a style={linkStyle} href="https://twitter.com/HarshitAditya1">
+            <TwitterIcon />
+          </a>
+          <a style={linkStyle} href="https://github.com/HarshitAditya27">
+            <GitHubIcon />
+          </a>
+          <a style={linkStyle} href="https://dev.to/harshitaditya1">
+            <LogoDevIcon />
+          </a>
+          <a
+            style={linkStyle}
+            href="https://www.linkedin.com/in/harshitaditya/"
+          >
+            <LinkedInIcon />
+          </a>
         </Box>
         <Typography
           variant="h5"
@@ -37,7 +56,11 @@ function Footer() {
             },
           }}
         >
-          Created from 💖by HarshitAditya27
+          Created from 💖by{" "}
+          <a style={linkStyle} href="https://github.com/HarshitAditya27">
+            {" "}
+            HarshitAditya27{" "}
+          </a>
         </Typography>
       </Box>
     </>

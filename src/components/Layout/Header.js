@@ -27,7 +27,7 @@ function Header() {
         component="div"
         sx={{ flexGrow: 1, my: 2 }}
       >
-        <FastfoodIcon /> My Resturant
+        <FastfoodIcon /> My Foodzilla 😋
       </Typography>
       <Divider />
       <ul className="mobile-nav">
@@ -37,9 +37,7 @@ function Header() {
         <li>
           <Link to={"/menu"}>Menu</Link>
         </li>
-        <li>
-          <Link to={"/about"}>About</Link>
-        </li>
+
         <li>
           <Link to={"/contact"}>Contact</Link>
         </li>
@@ -60,12 +58,12 @@ function Header() {
               <MenuIcon />
             </IconButton>
             <Typography
-              color={"purple"}
+              color={"orange"}
               variant="h6"
               component="div"
               sx={{ flexGrow: 1 }}
             >
-              <FastfoodIcon /> My Resturant
+              <FastfoodIcon /> My Foodzilla 😋
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <ul className="navigation-menu">
@@ -75,9 +73,7 @@ function Header() {
                 <li>
                   <Link to={"/menu"}>Menu</Link>
                 </li>
-                <li>
-                  <Link to={"/about"}>About</Link>
-                </li>
+
                 <li>
                   <Link to={"/contact"}>Contact</Link>
                 </li>
